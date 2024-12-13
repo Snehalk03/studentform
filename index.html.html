@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Student Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Student Registration</h1>
+      <form action="submit_form.php" method="POST">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Shivam Balaji Patil" required />
+          </div>
+
+          <div class="user-input-box">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="Pune, Maharashtra" required />
+          </div>
+
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="shivam@123gmail.com" required />
+          </div>
+
+          <div class="user-input-box">
+            <label for="phone">WhatsApp Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter Phone Number" required />
+          </div>
+
+          <div class="user-input-box">
+            <label for="domain">Domain</label>
+            <input type="text" id="domain" name="domain" placeholder="Web Development / Full Stack / Data Science / Salesforce" required />
+          </div>
+
+          <div class="user-input-box">
+            <label for="experience">Experience/Fresher</label>
+            <input type="text" id="experience" name="experience" placeholder="Yes / No" required />
+          </div>
+
+          <div class="user-input-box">
+            <label for="companyName">Company Name</label>
+            <input type="text" id="companyName" name="companyName" />
+          </div>
+
+          <div class="user-input-box">
+            <label for="yearsOfExperience">Years of Experience</label>
+            <input type="text" id="yearsOfExperience" name="yearsOfExperience" />
+          </div>
+
+          <div class="user-input-box">
+            <label for="designation">Designation</label>
+            <input type="text" id="designation" name="designation" />
+          </div>
+
+          <div class="user-input-box">
+            <label for="ctc">CTC</label>
+            <input type="text" id="ctc" name="ctc" />
+          </div>
+
+          <div class="gender-details-box">
+            <span class="gender-title">Gender</span>
+            <div class="gender-category">
+              <input type="radio" name="gender" id="male" value="Male" />
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" value="Female" />
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="other" value="Other" />
+              <label for="other">Other</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-submit-btn">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
